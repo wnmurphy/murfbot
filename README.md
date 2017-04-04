@@ -8,12 +8,19 @@ Murfbot is a Slackbot I wrote for the Slack channel I share with my friends. It 
 
 2. Clone this repo.
 
-> git clone https://github.com/wnmurphy/murfbot.git
+```
+git clone https://github.com/wnmurphy/murfbot.git
+```
 
 3. Install dependencies with npm.
 
-> cd murfbot
-> npm install
+```
+cd murfbot
+```
+
+```
+npm install
+```
 
 3. Get a Slack API key.
 
@@ -25,19 +32,27 @@ You'll need to leave Murfbot running in the background. When the process termina
 
 Open a new Terminal tab, and run
 
-> node murfbot.js 
+```
+node murfbot.js 
+```
 
 You can also make murfbot.js an executable, since the file contains
 
-> #! /usr/local/bin/node
+```
+#! /usr/local/bin/node
+```
 
 To do this, add executable permissions to murfbot.js with
 
-> chmod +x murfbot.js
+```
+chmod +x murfbot.js
+```
 
 Then run with
 
-> ./murfbot.js
+```
+./murfbot.js
+```
 
 Your Slack API key tells Murfbot which team to join. As long as Murfbot is running, you should see him as an active user on your Slack team.
 
