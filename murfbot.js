@@ -1,3 +1,4 @@
+#! /usr/local/bin/node
 'use strict'
 
 var Botkit = require('botkit');
@@ -132,11 +133,12 @@ var availableCommands =
 '*meshuggah*: drops a random meshuggah video in the channel\n' +
 '*someone\'s name*: says something fun and random\n' +
 '`@murfbot` _commands_: \n' +
+'*stats*: see uptime for current run in seconds\n' +
 '*help*: see this list';
 
 // Print a list of commands.
 controller.hears('help', 'direct_mention', function(bot, message){
-  bot.reply(message, keywords.availableCommands);
+  bot.reply(message, availableCommands);
 });
 
 // Print uptime in seconds.
